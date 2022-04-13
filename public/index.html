@@ -27,9 +27,18 @@
   <!-- MY CODE BELOW -->
 
     <!-- <button onclick="googleLogin()">Login</button> -->
-    <div class="item-list"></div>
+    <div class="app">
+      <div class="create-item">
+        <input type='text' id='name' placeholder='Item Name'>
+        <input type='text' id='effect' placeholder='Item Effect'>
+        <input type='number' id='quantity' placeholder='Item Quantity'>
+        <button onclick="createItem()">Create Item</button>
+      </div>
+      <div class="item-list"></div>
+    </div>
 
   <!-- MY CODE ABOVE -->
     <script src="app.js"></script>
+    <script src="itemform.js"></script>
   </body>
 </html>

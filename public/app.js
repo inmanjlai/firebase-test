@@ -5,24 +5,6 @@ document.addEventListener("DOMContentLoaded", (event) =>{
 
     const itemList = document.querySelector(".item-list")
 
-    // async function displayItems(elementToPopulate) {
-
-    //     const items = db.collection("Items");
-
-    //     list_of_results = await items.get();
-    //     list_of_results.forEach((item) => {
-    //         data = item.data()
-    //         itemList.innerHTML += `
-    //             <li>${data.name}: ${data.effect}</li>
-    //         `
-    //     })
-
-    //     console.log("ITEMS:", list_of_results);
-
-    // };
-    // displayItems(itemList);
-
-
     // TO GET DATA IN REAL TIME
 
     function displayItemsRT(elementToPopulate) {
@@ -36,13 +18,15 @@ document.addEventListener("DOMContentLoaded", (event) =>{
             doc.forEach(item => {
                 data = item.data();
                 elementToPopulate.innerHTML += `
-                    <li>${data.name}: ${data.effect}</li>
+                    <li>
+                        ${item.id}: ${data.name}: ${data.effect}
+                        <button onclick="deleteItem('${item.id}')">delete</button>
+                    </li>
                 `
             })
         });
     }
     displayItemsRT(itemList);
-
 
 });
 
