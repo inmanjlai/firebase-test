@@ -28,11 +28,5 @@ body {
         width: 90%;
     }
 
-    body {
-        overflow: hidden;
-    }
-
-    html {
-        overflow: hidden;
-    }
+    html, body {margin: 0; height: 100%; overflow: hidden}
 }
