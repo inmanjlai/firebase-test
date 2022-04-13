@@ -1,0 +1,27 @@
+table {
+    background-color: rgb(218, 225, 233);
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+th {
+    background-color: black;
+    color: white;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+.uses {
+    text-align: center;
+}

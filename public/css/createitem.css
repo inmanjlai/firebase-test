@@ -1,0 +1,16 @@
+.create-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-item input{
+    padding: 10px;
+}
+
+.create-item button {
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    border: none;
+}
