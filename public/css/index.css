@@ -21,6 +21,7 @@ body {
 @media screen and (max-width: 600px) {
     .app {
         flex-direction: column;
+        height: 70vh;
     }
 
     .table-container {
