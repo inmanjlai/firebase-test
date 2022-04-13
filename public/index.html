@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/itemtable.css">
     <link rel="stylesheet" href="./css/createitem.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.6.10/firebase-app-compat.js"></script>
@@ -32,7 +34,9 @@
 
     <!-- <button onclick="googleLogin()">Login</button> -->
     <div class="app">
-      <table class="item-list"></table>
+      <div class="table-container">
+        <table class="item-list"></table>
+      </div>
       <div class="create-item">
         <input type='text' id='name' placeholder='Item Name'>
         <input type='text' id='effect' placeholder='Item Effect'>

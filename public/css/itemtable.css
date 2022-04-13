@@ -1,3 +1,20 @@
+.table-container {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.table-container::-webkit-scrollbar {
+    background-color: none;
+    border: none;
+    width: 5px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: rgb(174, 174, 174);
+    border-radius: 20px;
+    width: 4px;
+}
+
 table {
     background-color: rgb(218, 225, 233);
     border-collapse: collapse;
@@ -5,6 +22,8 @@ table {
 }
 
 th {
+    position: sticky;
+    top: 0;
     background-color: black;
     color: white;
     border-right: 1px solid black;
@@ -22,4 +41,17 @@ tr {
 
 .uses {
     text-align: center;
+}
+
+#deleteBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-weight: 800;
+    font-size: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

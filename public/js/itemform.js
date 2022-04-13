@@ -1,18 +1,25 @@
 function createItem() {
 
     const db = firebase.firestore();
-    const name = document.querySelector("#name").value;
-    const effect = document.querySelector("#effect").value;
-    const quantity = document.querySelector("#quantity").value;
+    const name = document.querySelector("#name");
+    const effect = document.querySelector("#effect");
+    const quantity = document.querySelector("#quantity");
 
     db.collection("Items").add({
-        name, effect, quantity
+        name:name.value, 
+        effect:effect.value, 
+        quantity: parseInt(quantity.value)
     });
 
+    name.value = "";
+    effect.value = "";
+    quantity.value = "";
 };
 
-function deleteItem(itemid) {
+async function deleteItem(itemId) {
 
-    console.log(itemid);
-    
+    const db = firebase.firestore();
+    let item = await db.collection("Items").doc(itemId).get()
+    item.ref.delete()
+
 }
